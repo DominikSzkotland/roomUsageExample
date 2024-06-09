@@ -20,6 +20,9 @@ public interface ProgrammerDAO {
     @Delete
     void deleteProgrammerFromDB(Programmer programmer);
 
+    @Query("DELETE FROM programmers")
+    void deleteAll();
+
     @Query("SELECT * FROM programmers")
     List<Programmer> allProgrammers();
 }

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/programmerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"/>
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname"/>
+
+    <TextView
+        android:id="@+id/experienceLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience Level"/>
+
+    <TextView
+        android:id="@+id/isAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lazy"/>
+</LinearLayout>

@@ -20,7 +20,10 @@ public abstract class ProgrammersDB extends RoomDatabase {
     // finally DB builder. Here you can define all needed options for your DB
     public static ProgrammersDB getInstance(Context context){
         if(instance == null){
-            instance = Room.databaseBuilder(context.getApplicationContext(), ProgrammersDB.class, "programmers").build();
+            instance = Room.databaseBuilder(context.getApplicationContext(), ProgrammersDB.class, "programmers")
+                    .allowMainThreadQueries()
+                    .fallbackToDestructiveMigration()
+                    .build();
         }
         return instance;
     }
